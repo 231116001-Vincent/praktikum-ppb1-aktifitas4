@@ -1,6 +1,7 @@
 package com.vharya.aktifitas4
 
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,5 +17,8 @@ class Menu2Activity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        val buttonBack: Button = findViewById(R.id.button_back)
+        buttonBack.setOnClickListener { finish() }
     }
 }
